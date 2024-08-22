@@ -1,7 +1,10 @@
 [package]
 name = "mobc-redis"
 version = "0.8.2"
-authors = ["importcjj <importcjj@gmail.com>", "Garren Smith <garren.smith@gmail.com>"]
+authors = [
+	"importcjj <importcjj@gmail.com>",
+	"Garren Smith <garren.smith@gmail.com>",
+]
 edition = "2018"
 license = "MIT/Apache-2.0"
 description = "Redis support for the mobc connection pool"
@@ -12,14 +15,14 @@ keywords = ["redis", "pool", "async", "await"]
 
 [dependencies]
 mobc = { version = "0.8", path = ".." }
-redis = { version = "0.24.0" }
+redis = { version = "0.26" }
 
 [features]
 default = ["mobc/tokio", "redis/tokio-comp"]
 async-std-comp = ["mobc/async-std", "redis/async-std-comp"]
 
 [dev-dependencies]
-tokio = { version = "1.0", features = ["full"]}
+tokio = { version = "1.0", features = ["full"] }
 
 [[examples]]
 name = "redis"
