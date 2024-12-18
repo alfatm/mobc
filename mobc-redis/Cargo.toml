@@ -1,6 +1,6 @@
 [package]
 name = "mobc-redis"
-version = "0.8.2"
+version = "0.9.0"
 authors = [
 	"importcjj <importcjj@gmail.com>",
 	"Garren Smith <garren.smith@gmail.com>",
@@ -15,7 +15,7 @@ keywords = ["redis", "pool", "async", "await"]
 
 [dependencies]
 mobc = { version = "0.8", path = ".." }
-redis = { version = "0.26" }
+redis = { version = "0.27" }
 
 [features]
 default = ["mobc/tokio", "redis/tokio-comp"]

@@ -1,7 +1,10 @@
 [package]
 name = "mobc-postgres"
-version = "0.8.2"
-authors = ["importcjj <importcjj@gmail.com>", "Garren Smith <garren.smith@gmail.com>"]
+version = "0.9.0"
+authors = [
+	"importcjj <importcjj@gmail.com>",
+	"Garren Smith <garren.smith@gmail.com>",
+]
 edition = "2018"
 readme = "README.md"
 license = "MIT/Apache-2.0"

@@ -14,6 +14,7 @@ where
     }
 }
 
+#[allow(clippy::module_inception)]
 mod time {
     use std::time::Duration;
     use std::time::Instant;

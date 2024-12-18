@@ -20,6 +20,7 @@ pub trait Executor: Send + Sync + 'static + Clone {
     fn spawn(&mut self, future: Pin<Box<dyn Future<Output = ()> + Send>>);
 }
 
+#[allow(clippy::module_inception)]
 #[cfg(all(feature = "tokio", not(feature = "async-std")))]
 mod runtime {
     use super::*;
@@ -96,7 +97,7 @@ mod runtime {
     }
 }
 
-#[cfg(all(feature = "async-std"))]
+#[cfg(feature = "async-std")]
 mod runtime {
     use super::*;
     use async_std::task;
